@@ -1,0 +1,23 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+.ipynb_checkpoints/
+
+.env
+*.env
+
+# Credenciais e tokens
+**/credentials.json
+**/token.json
+secrets.json
+
+# Artefatos de IDE/SO
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
