@@ -29,7 +29,4 @@ Este repositório reúne experimentos com agentes LLM, integração com Google C
 4. Execute a API:
    - `uvicorn AgentFastAPI.app:app --reload`
 
-## Segurança
 
-- Não suba `credentials.json`, `token.json`, `.env` ou chaves de API para o GitHub.
-- Revogue e gere novas chaves sempre que alguma tiver sido exposta em arquivos locais.
