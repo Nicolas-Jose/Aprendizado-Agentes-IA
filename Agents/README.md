@@ -1,19 +1,19 @@
 # Pasta Agents
 
-Esta pasta concentra os artefatos ativos de experimentação com agentes.
+Esta pasta reúne notebooks e scripts Python com implementações de agentes de IA, integração com ferramentas e exemplos de execução.
 
 ## Conteúdo ativo
 
 ### Notebooks
 
-- `agente_mentoria.ipynb`
-- `notebook_explicativo.ipynb`
-- `agente_multitool_basico.ipynb`
-- `agente_multitool_streaming.ipynb`
-- `agente_supervisor_fastapi.ipynb`
-- `agente_traducao_calculo.ipynb`
-- `agente_calendar_debug.ipynb`
-- `agent_experimento_base.ipynb`
+- `agente_mentoria.ipynb`: fluxo de agente para tarefas de mentoria.
+- `notebook_explicativo.ipynb`: explicação passo a passo de construção e execução.
+- `agente_multitool_basico.ipynb`: agente com múltiplas ferramentas em fluxo básico.
+- `agente_multitool_streaming.ipynb`: variação com streaming de respostas.
+- `agente_supervisor_fastapi.ipynb`: abordagem supervisor para orquestração de especialistas.
+- `agente_traducao_calculo.ipynb`: roteamento entre cenários de tradução e cálculo.
+- `agente_calendar_debug.ipynb`: validação de fluxo com logs e depuração.
+- `agent_experimento_base.ipynb`: base de experimentos e prototipagem.
 
 ### Scripts
 
@@ -23,21 +23,10 @@ Esta pasta concentra os artefatos ativos de experimentação com agentes.
 - `teste_auth_google.py`: bootstrap de autenticação OAuth local.
 - `test_list_events.py`: verificação de leitura de eventos.
 
-## Limpeza já aplicada
-
-- Remoção de notebooks redundantes/legados:
-  - `AgentFinal.ipynb`
-  - `AgentFinal2.ipynb`
-  - `AgentGPT.ipynb`
-  - `MultiAgent.ipynb`
-- Remoção de checkpoints automáticos em `.ipynb_checkpoints/`.
-- Padronização de nomes para legibilidade e consistência.
-
 ## Documentação de aprendizados
 
-- Consulte `LEARNINGS.md` para resumo do que foi aprendido em cada arquivo principal.
+- `LEARNINGS.md` descreve os tópicos estudados e os conceitos aplicados em cada artefato principal.
 
-## Observações de segurança
+## Arquivos locais
 
-- `credentials.json`, `token.json` e `.env` são locais e não devem ser versionados.
-- Para produção, use variáveis de ambiente e/ou secret manager.
+- `credentials.json`, `token.json` e `.env` são arquivos de configuração local.

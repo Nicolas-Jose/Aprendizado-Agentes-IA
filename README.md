@@ -1,21 +1,20 @@
 # Mentoria - Projeto de Agentes
 
-Este repositório reúne experimentos com agentes LLM, integração com Google Calendar e uma API com FastAPI.
+Este repositório reúne implementações de agentes de IA com integração de ferramentas, fluxos de agendamento no Google Calendar e uma API em FastAPI.
 
 ## Estrutura
 
-- `Agents/`: notebooks e scripts de experimentação com agentes.
-- `AgentFastAPI/`: API para expor agente por endpoint HTTP.
-- `.gitignore`: proteção contra versionamento de credenciais, tokens e ambientes locais.
+- `Agents/`: notebooks e scripts Python com diferentes arquiteturas de agentes.
+- `AgentFastAPI/`: camada de API para execução de agentes por endpoint HTTP.
+- `.env.example`: variáveis de ambiente necessárias para execução local.
+- `.gitignore`: regras de versionamento para arquivos locais e sensíveis.
 
-## Organização aplicada
+## Conteúdo do projeto
 
-- Renomeação de arquivos com nomes descritivos.
-- Padronização para nomes sem espaços.
-- Remoção de chaves sensíveis hardcoded em scripts Python.
-- Preparação do projeto para publicação segura no GitHub.
-- Remoção de arquivos redundantes e checkpoints automáticos.
-- Inclusão de documentação de aprendizados em `Agents/LEARNINGS.md`.
+- Implementações de agentes com abordagem multitool e supervisor.
+- Fluxos de autenticação e leitura/escrita de eventos no Google Calendar.
+- Exemplos com execução tradicional e streaming.
+- Documentação de conceitos e práticas em `Agents/LEARNINGS.md`.
 
 ## Como executar (visão geral)
 
@@ -29,4 +28,7 @@ Este repositório reúne experimentos com agentes LLM, integração com Google C
 4. Execute a API:
    - `uvicorn AgentFastAPI.app:app --reload`
 
+## Configuração local
 
+- Utilize `.env` para variáveis de ambiente locais.
+- Mantenha `credentials.json` e `token.json` apenas no ambiente local.
